@@ -1,0 +1,40 @@
+@a is 5 ; 
+if @a <> 2
+ print _a\sis\snot\stwo...
+end
+print _=====End\sOf\sFirst\sPhase=====
+if @a < 10
+ print _a\sis\sless\sthan\sten...
+ if @a < 9
+  print _a\sis\sless\sthan\snine...
+  if @a < 8
+   print _a\sis\sless\sthan\seight...
+  end
+ end
+end
+print _=====End\sOf\sSecond\sPhase=====
+if @a > 3
+ print _a\sis\sgreater\sthan\sthree...
+end elseif @a > 2
+ print _a\sis\sgreater\sthan\two...
+end elseif @a > 1
+ print _a\sis\sgreater\sthan\one...
+end else
+ print _a\smight\sbe\sless\sthan\sor\sequal\sto\sone...
+end
+print _=====End\sOf\sThird\sPhase=====
+print _looping\sfrom\szero\sto\sfour...
+@b is 0 - 1 ; while @b < 4 ; @b is @b + 1 ;
+ print @b
+end
+print _=====End\sOf\sForth\sPhase=====
+print _breaking\sand\scontinuation...
+@c is 0 - 1 ; while @c < 18 ; @c is @c + 1 ;
+ if @c = 9
+  continue
+ end elseif @c = 16
+  break
+ end
+ print @c
+end
+print _=====End\sOf\sFifth\sPhase=====

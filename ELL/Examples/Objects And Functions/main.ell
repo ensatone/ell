@@ -1,0 +1,35 @@
+fun !Animal
+ @&__0->name is @__1 ; 
+ @&__0->sound is @__2 ;
+ fun !_Animal end
+ fun @&__0->!Make_Sound
+  @return is @&__0->sound
+ end
+ fun @&__0->!Sleep
+  @&__0->sleeping is _Sleeping
+  @return is _Zzz
+ end
+end
+
+fun !Animal_Name
+ @return is @&__0->name
+end 
+
+@dog is Object
+$ [ !Animal , @dog , _Goofy , _Woof ]
+print [ !Animal_Name , @dog ]
+print [ @&dog->!Make_Sound , @dog ]
+print [ @dog->!Sleep , @dog ]
+print @dog->sleeping
+print _=====End\sOf\sFirst\sPhase=====
+fun !_func
+ print _Functions\sAre\sCool...
+ @return is 1
+end
+print [ !_func , 0 ]
+print _======End\sOf\sSecond\sPhase=====
+fun !_sum
+ @return is @__0 + @__1 ;
+end
+print [ !_sum , 7 , 1 ]
+print _=====End\sOf\sThird\sPhase=====

@@ -1,0 +1,20 @@
+@_arr is ~{ 1 , 2 , 3 , 4 , 5 } ;
+print { ag , @_arr , 0 } ;
+print _===========End\sOf\sFirst\sPhase============ ;
+@_tdarr is ~{
+~{ 1 , 2 , 3 } ,
+~{ 3 , 4 , 5 } ,
+~{ 5 , 6 , 7 }
+} ;
+@_a is 0 - 1 ; while @_a < 2 ; @_a is @_a + 1 ;
+ @_b is 0 - 1 ; while @_b < 2 ; @_b is @_b + 1 ;
+  print { ag , @_tdarr , @_a , @_b } ;
+ end
+end
+print _===========End\sOf\sSecond\sPhase============ ;
+$ { as , @_tdarr , 0 , 0 , 7 }
+print { ag , @_tdarr , 0 , 0 }
+print _===========End\sOf\sThird\sPhase============ ;
+$ { as , @_tdarr , 0 , 0 , ~{ 5 , 6 , 7 } }
+print { ag , @_tdarr , 0 , 0 , 0 }
+print _===========End\sOf\sForth\sPhase============ ;
